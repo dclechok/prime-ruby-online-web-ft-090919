@@ -13,7 +13,7 @@ def prime?(integer)
 
 	else
 		full_int_array[1..-2].any? do |item|
-			(integer % item == 0)
+			!(integer % item == 0)
 		end
 	end
 end
