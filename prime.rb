@@ -19,4 +19,4 @@ end
 
 # only factors is 1, and the number we're testing
 
-#divides by a positive integer and still produces a positive integer
+#divides by a positive integer and still produces a positive integer is not a prime number
