@@ -7,7 +7,7 @@ def prime?(integer)
 		c += 1
 	end
 
-	if(full_int_array.length <= 3)
+	if(integer >= 1 && integer <= 3)
 		return true
 	elsif (integer < 1)
 		return false
