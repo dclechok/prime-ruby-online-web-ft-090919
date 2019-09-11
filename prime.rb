@@ -6,18 +6,13 @@ def prime?(integer)
 		full_int_array << c
 		c += 1
 	end
-
 	if(integer >= 2 && integer <= 3)
 		return true
 	elsif (integer <= 1)
 		return false
 	else
-		full_int_array[1..-2].each do |item|
-			if(integer <= 0 || integer % item == 0)
-				return false
-			else
-				return true
-			end
+		full_int_array[1..-2].any? do |item|
+			(integer % item == 0)
 		end
 	end
 end
