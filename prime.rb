@@ -8,7 +8,6 @@ def prime?(integer)
 	end
 
 	if(full_int_array.length <= 3)
-		p "array is 3 or less"
 		return true
 
 	else
