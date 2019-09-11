@@ -1,27 +1,19 @@
 def prime?(integer)
+	#store ints (as floats) into an array
 	c = 1
 	full_int_array = []
   while c <= integer
-		full_int_array << c.to_f
+		full_int_array << c
 		c += 1
 	end
 
-	full_int_array.shift
-	full_int_array.pop
-	d = 0
-	while d < full_int_array.length
-		if(integer <= 0 || integer % full_int_array[d] == 0)
-			return false
-			d += 1
-		else
-			return true
+	if(full_int_array.length <= 3)
+		p "array is 3 or less"
+		return true
+
+	else
+		full_int_array[1..-2].any? do |item|
+			(integer % item == 0)
 		end
 	end
 end
-
-
-# A prime number is a natural number greater than 1
-
-# only factors is 1, and the number we're testing
-
-#divides by a positive integer and still produces a positive integer is not a prime number
