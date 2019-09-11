@@ -7,7 +7,7 @@ def prime?(integer)
 		c += 1
 	end
 
-	if(full_int_array.length <= 3 && full_int_array.length > 0)
+	if(full_int_array.length <= 3 && integer > 0)
 		return true
 	else
 		full_int_array[1..-2].each do |item|
