@@ -11,7 +11,7 @@ def prime?(integer)
 	elsif (integer <= 1)
 		return false
 	else
-		full_int_array[1..-2].any? do |item|
+		full_int_array[1..-2].none? do |item|
 			(integer % item == 0)
 		end
 	end
